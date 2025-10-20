@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Full Menu — Albany Boba Shop Index</title>
+  <style>
+    :root{--cream:#f7efe6;--light-brown:#e3c9ad;--mid-brown:#c08b64;--dark-brown:#6b3f2b;--muted:#7a6a63;--max-width:1100px;}
+    html,body{margin:0;padding:0;background:var(--cream);font-family:Segoe UI, Roboto, Arial;color:var(--dark-brown);}
+    .page{width:94%;max-width:var(--max-width);margin:28px auto;background:white;border:1px solid #d6c7b2;}
+    header#banner{background:linear-gradient(180deg,var(--light-brown),var(--mid-brown));color:white;padding:18px;text-align:center;}
+    .frame{display:flex;align-items:flex-start;}
+    .sidebar{width:240px;background:#fff6ef;border-right:1px solid #edd6c1;padding:16px;box-sizing:border-box;}
+    .sidebar nav a{display:block;padding:8px;margin:8px 0;font-weight:600;color:var(--dark-brown);text-decoration:none;}
+    .content{padding:18px;flex:1;box-sizing:border-box;}
+    table.shops{width:100%;border-collapse:collapse;margin-bottom:16px;}
+    table.shops th, table.shops td{border:1px solid #e5d2c2;padding:10px;text-align:left;background:#fffdfb;}
+    table.shops th{background:#fbf2ea;font-weight:700;color:var(--dark-brown);}
+    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;}
+    .tags li{list-style:none;padding:6px 10px;background:#f7efe6;border:1px solid #ead3bf;border-radius:6px;font-weight:600;color:var(--mid-brown);}
+    footer{background:var(--light-brown);color:white;text-align:center;padding:10px;border-top:1px solid #d6c7b2;}
+    @media(max-width:720px){.frame{flex-direction:column}.sidebar{width:100%}}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header id="banner">
+      <h1>The Full Menu — Albany Boba Shops</h1>
+      <p style="margin-top:6px;font-size:0.95rem;opacity:0.95;">Real local shops around Albany, NY — click View to open a sample detail page.</p>
+    </header>
+
+    <div class="frame">
+      <aside class="sidebar" role="navigation">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="shops.html">Shop Index</a>
+          <a href="shop-detail.html">Sample Detail</a>
+        </nav>
+        <div style="margin-top:12px;color:var(--muted);font-size:0.95rem;">
+          <p><strong>Filter ideas:</strong></p>
+          <ul style="margin:6px 0 0 18px;">
+            <li>Cozy / Study</li><li>Dairy-free</li><li>Open late</li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="content">
+        <h2 style="margin-top:0;">Shop Index</h2>
+        <p style="color:var(--muted);margin-bottom:12px;">Addresses and quick tags are shown below. "View" currently opens the sample detail template.</p>
+
+        <table class="shops" aria-label="Shops list">
+          <thead>
+            <tr>
+              <th>Shop Name</th>
+              <th>Address (City)</th>
+              <th>Tags</th>
+              <th>View</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Short and Stout Tea</td>
+              <td>1736A Western Ave, Albany, NY 12203</td>
+              <td>Cozy, Student-friendly, Matcha</td>
+              <td><a href="shop-detail.html">View</a></td>
+            </tr>
+            <tr>
+              <td>Eggcellent</td>
+              <td>1660 Western Ave Suite 1, Albany, NY</td>
+              <td>Bubble tea, Egg tarts, Near Crossgates</td>
+              <td><a href="shop-detail.html">View</a></td>
+            </tr>
+            <tr>
+              <td>Gong Cha (Albany)</td>
+              <td>1232 Western Ave, Albany, NY 12203</td>
+              <td>Popular chain, Customizable sweetness</td>
+              <td><a href="shop-detail.html">View</a></td>
+            </tr>
+            <tr>
+              <td>Berry &amp; Berry</td>
+              <td>1 Crossgates Mall Rd, Albany, NY 12203</td>
+              <td>Mall location, Smoothies & boba</td>
+              <td><a href="shop-detail.html">View</a></td>
+            </tr>
+            <tr>
+              <td>Romanteac Bubble Tea Dessert</td>
+              <td>260 Osborne Rd, Albany, NY 12211</td>
+              <td>Desserts + bubble tea</td>
+              <td><a href="shop-detail.html">View</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <section>
+          <h3>Popular Tags</h3>
+          <ul class="tags" aria-label="Popular tags">
+            <li>Cozy</li><li>Study-friendly</li><li>Vegan</li><li>Student Discount</li><li>Open Late</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <footer>© 2025 The Sip’s Start — Albany Boba Guide</footer>
+  </div>
+</body>
+</html>

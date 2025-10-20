@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Deep Dive — Short and Stout Tea</title>
+  <style>
+    :root{
+      --cream:#f7efe6;--light-brown:#e3c9ad;--mid-brown:#c08b64;
+      --dark-brown:#6b3f2b;--muted:#7a6a63;--max-width:1100px;
+    }
+    html,body{margin:0;padding:0;font-family:Segoe UI, Roboto, Arial, sans-serif;background:var(--cream);color:var(--dark-brown);}
+    .page{width:94%;max-width:var(--max-width);margin:28px auto;background:white;border:1px solid #d6c7b2;}
+    header#banner{background:linear-gradient(180deg,var(--light-brown),var(--mid-brown));color:white;padding:18px;text-align:center;}
+    .frame{display:flex;gap:0;align-items:flex-start;}
+    .sidebar{width:240px;background:#fff6ef;border-right:1px solid #edd6c1;padding:16px;box-sizing:border-box;}
+    .content{padding:18px;flex:1;box-sizing:border-box;}
+    dl.shop-info dt{font-weight:700;margin-top:6px;} 
+    dl.shop-info dd{margin:0 0 8px 8px;color:var(--muted);}
+    .gallery{display:flex;gap:10px;margin:12px 0;flex-wrap:wrap;}
+    .gallery a{display:block;width:180px;border:1px solid #ead3bf;background:#fff;border-radius:6px;overflow:hidden;text-align:center;}
+    .gallery img{width:100%;height:120px;object-fit:cover;display:block;}
+    .box{border:1px solid #ead3bf;padding:8px;background:#fffdfb;border-radius:6px;margin-top:16px;}
+    footer{background:var(--light-brown);color:white;text-align:center;padding:10px;border-top:1px solid #d6c7b2;margin-top:12px;}
+    @media(max-width:760px){
+      .frame{flex-direction:column;}
+      .gallery a{width:48%;}
+    }
+    #backTop{display:inline-block;margin-top:10px;padding:8px 10px;background:var(--mid-brown);color:white;border-radius:6px;text-decoration:none;}
+    #backTop:hover{background:var(--dark-brown);}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header id="banner">
+      <h1>The Deep Dive — Short and Stout Tea</h1>
+      <p style="margin-top:6px;font-size:0.95rem;opacity:0.95;">
+        Sample shop detail filled using public listing data for Short and Stout Tea (Albany).
+      </p>
+    </header>
+
+    <div class="frame">
+      <aside class="sidebar" role="navigation">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="shops.html">Shop Index</a>
+          <a href="shop-detail.html">This Page</a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <section>
+          <h2 style="margin-top:0;">Short and Stout Tea</h2>
+          <dl class="shop-info" aria-label="Shop information">
+            <dt>Address</dt>
+            <dd>1736A Western Ave, Albany, NY 12203</dd>
+            <dt>Hours (example listing)</dt>
+            <dd>Wed–Sat: 11:00 AM – 7:00 PM; Sun: 11:00 AM – 5:00 PM (confirm before visiting)</dd>
+            <dt>Contact</dt>
+            <dd>(518) 456-8327 — check their official site or call for updates</dd>
+          </dl>
+        </section>
+
+        <section aria-labelledby="gallery-title">
+          <h3 id="gallery-title">Photo Gallery (replace with your images)</h3>
+          <div class="gallery">
+            <a href="assets/short-and-stout-large.jpg">
+              <img src="assets/short-and-stout.jpg" alt="Short and Stout interior (placeholder)">
+            </a>
+            <a href="assets/short-and-stout-2-large.jpg">
+              <img src="assets/short-and-stout-2.jpg" alt="Short and Stout drink (placeholder)">
+            </a>
+            <a href="assets/short-and-stout-3-large.jpg">
+              <img src="assets/short-and-stout-3.jpg" alt="Short and Stout counter (placeholder)">
+            </a>
+            <a href="assets/short-and-stout-4-large.jpg">
+              <img src="assets/short-and-stout-4.jpg" alt="Short and Stout seating (placeholder)">
+            </a>
+          </div>
+        </section>
+
+        <section style="margin-top:8px;">
+          <h3>Signature Drinks</h3>
+          <ul>
+            <li>Classic Milk Tea (customizable sugar)</li>
+            <li>Matcha Latte (student favorite)</li>
+            <li>Seasonal Fruit Teas</li>
+          </ul>
+
+          <h4 style="margin-top:12px;">How to order</h4>
+          <ol>
+            <li>Pick a base (tea/milk/smoothie)</li>
+            <li>Choose sweetness and ice level</li>
+            <li>Add pearls or other toppings</li>
+          </ol>
+        </section>
+
+        <section class="box">
+          <h4 style="margin-top:0;">Menu PDF (embedded)</h4>
+          <object data="assets/short-and-stout-menu.pdf" type="application/pdf" width="100%" height="280">
+            <p>
+              PDF cannot be displayed.
+              <a href="assets/short-and-stout-menu.pdf">Download the PDF menu</a>
+            </p>
+          </object>
+        </section>
+
+        <section style="margin-top:12px;">
+          <h3>Atmosphere</h3>
+          <p style="color:var(--muted);">
+            A small lounge-style cafe popular with students and locals. Friendly staff and a rotating seasonal menu.
+            Confirm hours before visiting.
+          </p>
+
+          <a id="backTop" href="#banner">Back to top</a>
+        </section>
+      </main>
+    </div>
+
+    <footer>© 2025 The Sip’s Start — Albany Boba Guide</footer>
+  </div>
+</body>
+</html>
