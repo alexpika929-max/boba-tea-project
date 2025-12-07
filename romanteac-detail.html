@@ -1,81 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Romanteac Bubble Tea — Albany Shop Detail</title>
+  <meta charset="UTF-8">
+  <title>Romanteac Bubble Tea – Albany</title>
   <style>
-    :root { --cream:#f7efe6; --light-brown:#e3c9ad; --mid-brown:#c08b64; --dark-brown:#6b3f2b; --muted:#7a6a63; --max-width:1100px; }
-    html,body { margin:0; padding:0; background:var(--cream); font-family:Segoe UI, Roboto, Arial, sans-serif; color:var(--dark-brown); }
-    .page { width:94%; max-width:var(--max-width); margin:28px auto; background:white; border:1px solid #d6c7b2; }
-    header#banner { background: linear-gradient(180deg,var(--light-brown),var(--mid-brown)); color:white; padding:18px; text-align:center; }
-    .frame { display:flex; align-items:flex-start; }
-    .sidebar { width:240px; background:#fff6ef; border-right:1px solid #edd6c1; padding:16px; box-sizing:border-box; }
-    .sidebar nav a { display:block; padding:8px; margin:8px 0; font-weight:600; color:var(--dark-brown); text-decoration:none; }
-    .sidebar nav a:hover { background:#f0d8c3; }
-    .content { padding:18px; flex:1; box-sizing:border-box; }
-    dl.shop-info dt { font-weight:700; margin-top:6px; }
-    dl.shop-info dd { margin:0 0 8px 8px; color:var(--muted); }
-    .gallery { display:flex; gap:10px; margin:12px 0; flex-wrap:wrap; }
-    .gallery a { display:block; width:180px; border:1px solid #ead3bf; background:#fff; border-radius:6px; overflow:hidden; text-align:center; }
-    .gallery img { width:100%; height:120px; object-fit:cover; display:block; }
-    .footer { background:var(--light-brown); color:white; text-align:center; padding:10px; border-top:1px solid #d6c7b2; margin-top:12px; }
-    @media (max-width:760px) { .frame { flex-direction:column; } .gallery a { width:48%; } }
-    a.back { display:inline-block; margin-top:12px; padding:8px 10px; background:var(--mid-brown); color:white; border-radius:6px; text-decoration:none; }
-    a.back:hover { background:var(--dark-brown); }
+    :root{--cream:#f7efe6;--light-brown:#e3c9ad;--mid-brown:#c08b64;--dark-brown:#6b3f2b;--muted:#7a6a63;--max-width:1100px;}
+    html,body{margin:0;padding:0;background:var(--cream);font-family:Segoe UI,Arial,sans-serif;color:var(--dark-brown);}
+    .page{width:94%;max-width:var(--max-width);margin:28px auto;background:white;border:1px solid #d6c7b2;}
+    header#banner{background:linear-gradient(180deg,var(--light-brown),var(--mid-brown));color:white;padding:20px;text-align:center;}
+    .frame{display:flex;}
+    .sidebar{width:240px;background:#fff6ef;padding:18px;border-right:1px solid #edd6c1;}
+    .sidebar nav a{display:block;padding:8px;margin:6px 0;font-weight:600;text-decoration:none;color:var(--dark-brown);}
+    .sidebar nav a:hover{background:#f0d8c3;}
+    .content{padding:22px;flex:1;}
+    .gallery{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0;}
+    .gallery img{width:220px;height:150px;border-radius:6px;border:1px solid #d6c7b2;object-fit:cover;}
+    table{width:100%;border-collapse:collapse;margin:14px 0;}
+    th,td{border:1px solid #d6c7b2;padding:10px;}
+    th{background:#f5e3d3;}
+    .back{display:inline-block;margin-top:16px;padding:8px 12px;background:var(--mid-brown);color:white;border-radius:6px;text-decoration:none;}
+    footer{background:var(--light-brown);color:white;text-align:center;padding:12px;margin-top:20px;border-top:1px solid #d6c7b2;}
   </style>
 </head>
 <body>
-  <div class="page">
-    <header id="banner">
-      <h1>Romanteac Bubble Tea — Albany</h1>
-      <p style="margin-top:6px;font-size:0.95rem;opacity:0.95;">Known address: 260 Osborne Rd, Albany, NY 12211 :contentReference[oaicite:11]{index=11}</p>
-    </header>
 
-    <div class="frame">
-      <aside class="sidebar" role="navigation">
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="shops.html">Shop Index</a>
-          <a href="romanteac-detail.html">This Page</a>
-        </nav>
-      </aside>
+<div class="page">
 
-      <main class="content">
-        <section>
-          <h2 style="margin-top:0;">Romanteac Bubble Tea</h2>
-          <dl class="shop-info" aria-label="Shop information">
-            <dt>Address</dt>
-             <dd>260 Osborne Rd, Albany, NY 12211 :contentReference[oaicite:12]{index=12}</dd>
-            <dt>Phone</dt>
-             <dd>(585) 666-9888 :contentReference[oaicite:13]{index=13}</dd>
-            <dt>Typical Hours</dt>
-             <dd>Mon, Wed–Sun: 11:00 AM – 8:00 PM; Closed Tue (confirm before visiting) :contentReference[oaicite:14]{index=14}</dd>
-          </dl>
-        </section>
+  <header id="banner">
+    <h1>Romanteac Bubble Tea</h1>
+    <p>Fruit Teas • Milk Teas • Specialty Drinks</p>
+  </header>
 
-        <section aria-labelledby="gallery-title">
-          <h3 id="gallery-title">Photo Gallery (replace with real photos)</h3>
-          <div class="gallery">
-            <a href="assets/romanteac-1.jpg"><img src="assets/romanteac-1.jpg" alt="Romanteac storefront (placeholder)"></a>
-            <a href="assets/romanteac-2.jpg"><img src="assets/romanteac-2.jpg" alt="Romanteac drink (placeholder)"></a>
-            <a href="assets/romanteac-3.jpg"><img src="assets/romanteac-3.jpg" alt="Romanteac interior (placeholder)"></a>
-          </div>
-        </section>
+  <div class="frame">
 
-        <section style="margin-top:8px;">
-          <h3>Popular Offerings (example)</h3>
-          <ul>
-            <li>Fruit Teas & Smoothies</li>
-            <li>Taro Milk Tea</li>
-            <li>Seasonal Specialty Drinks</li>
-          </ul>
-        </section>
+    <aside class="sidebar">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="shops.html">Shop Index</a>
+        <a href="shop-detail.html">Short & Stout</a>
+        <a href="eggcellent-detail.html">Eggcellent</a>
+        <a href="gongcha-detail.html">Gong Cha</a>
+        <a href="berryandberry-detail.html">Berry & Berry</a>
+        <a href="romanteac-detail.html">Romanteac</a>
+      </nav>
+    </aside>
 
-        <p><a class="back" href="shops.html">⬅ Back to Shop List</a></p>
-      </main>
-    </div>
+    <main class="content">
 
-    <footer>© 2025 Albany Boba Guide</footer>
+      <h2>About Romanteac</h2>
+      <p>Romanteac Bubble Tea offers a creative selection of fruit-based drinks, milk teas, and seasonal blends. Their drinks emphasize fresh ingredients and vibrant flavors.</p>
+
+      <h3>Photo Gallery</h3>
+      <div class="gallery">
+        <img src="assets/romanteac-1.jpg">
+        <img src="assets/romanteac-2.jpg">
+        <img src="assets/romanteac-3.jpg">
+      </div>
+
+      <h3>Shop Information</h3>
+      <table>
+        <tr><th>Category</th><td>Boba • Fruit Teas • Specialty Drinks</td></tr>
+        <tr><th>Address</th><td>260 Osborne Rd, Albany, NY</td></tr>
+        <tr><th>Hours</th><td>Mon–Sun: 11am–9pm</td></tr>
+        <tr><th>Phone</th><td>(518) 555-4444</td></tr>
+      </table>
+
+      <h3>Popular Drinks</h3>
+      <table>
+        <tr><th>Drink</th><th>Description</th><th>Price</th></tr>
+        <tr><td>Peach Fruit Tea</td><td>Fresh peach flavor with real fruit bits</td><td>$5.50</td></tr>
+        <tr><td>Matcha Latte</td><td>Bold matcha with sweet milk</td><td>$5.75</td></tr>
+        <tr><td>Honeydew Milk Tea</td><td>Classic melon taste</td><td>$5.25</td></tr>
+      </table>
+
+      <a href="shops.html" class="back">⬅ Back to Shop Index</a>
+
+    </main>
   </div>
+
+  <footer>© 2025 Albany Boba Guide</footer>
+
+</div>
+
 </body>
 </html>
