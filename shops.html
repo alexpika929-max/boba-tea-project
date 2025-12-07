@@ -1,138 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Albany Boba Shops – Index</title>
-    <style>
-        body {
-            background-color: #faf3e0;
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
-        .wrapper {
-            display: table;
-            width: 100%;
-        }
-        .row {
-            display: table-row;
-        }
-        .sidebar {
-            display: table-cell;
-            width: 22%;
-            background: #f5d6b4;
-            padding: 20px;
-            vertical-align: top;
-        }
-        .content {
-            display: table-cell;
-            width: 78%;
-            padding: 20px;
-        }
-        h1, h2 {
-            color: #6b3f2b;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background: white;
-        }
-        th, td {
-            border: 1px solid #d2b48c;
-            padding: 10px;
-            text-align: left;
-        }
-        a {
-            color: #6b3f2b;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            color: #b85c38;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Albany Boba Shops – Index</title>
+  <style>
+    :root {
+      --cream:#f7efe6;
+      --light-brown:#e3c9ad;
+      --mid-brown:#c08b64;
+      --dark-brown:#6b3f2b;
+      --muted:#7a6a63;
+      --max-width:1100px;
+    }
+
+    html, body {
+      background: var(--cream);
+      margin: 0;
+      padding: 0;
+      font-family: Segoe UI, Arial, sans-serif;
+      color: var(--dark-brown);
+    }
+
+    .page {
+      width: 94%;
+      max-width: var(--max-width);
+      margin: 28px auto;
+      background: white;
+      border: 1px solid #d6c7b2;
+    }
+
+    header#banner {
+      background: linear-gradient(180deg, var(--light-brown), var(--mid-brown));
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .frame {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .sidebar {
+      width: 240px;
+      background: #fff6ef;
+      padding: 18px;
+      border-right: 1px solid #edd6c1;
+      box-sizing: border-box;
+    }
+
+    .sidebar nav a {
+      display: block;
+      padding: 8px;
+      margin: 6px 0;
+      color: var(--dark-brown);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .sidebar nav a:hover {
+      background: #f0d8c3;
+    }
+
+    .content {
+      padding: 22px;
+      flex: 1;
+      box-sizing: border-box;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      background: white;
+    }
+
+    th, td {
+      border: 1px solid #d6c7b2;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background: #f5e3d3;
+    }
+
+    a {
+      color: var(--dark-brown);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #b85c38;
+    }
+
+    footer {
+      background: var(--light-brown);
+      color: white;
+      text-align: center;
+      padding: 12px;
+      border-top: 1px solid #d6c7b2;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 760px) {
+      .frame {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="wrapper">
-    <div class="row">
+<div class="page">
 
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <h2>Navigation</h2>
-            <ul>
-                <li><a href="index.html">🏠 Home</a></li>
-                <li><a href="shops.html">📍 Shop Index</a></li>
-                <li><a href="shop-detail.html">Short and Stout</a></li>
-                <li><a href="eggcellent-detail.html">Eggcellent</a></li>
-                <li><a href="gongcha-detail.html">Gong Cha</a></li>
-                <li><a href="berryandberry-detail.html">Berry & Berry</a></li>
-                <li><a href="romanteac-detail.html">Romanteac</a></li>
-            </ul>
-        </div>
+  <!-- Banner -->
+  <header id="banner">
+    <h1>Albany Boba Tea Shop Directory</h1>
+    <p>Browse all boba tea locations currently featured in this guide.</p>
+  </header>
 
-        <!-- Main Content -->
-        <div class="content">
-            <h1>Albany Boba Tea Shops</h1>
-            <p>Below is a full index of boba tea shops in Albany currently included in this project.</p>
+  <div class="frame">
 
-            <h2>Shop Directory</h2>
-            <table>
-                <tr>
-                    <th>Shop Name</th>
-                    <th>Location</th>
-                    <th>Category</th>
-                    <th>View Details</th>
-                </tr>
+    <!-- Sidebar -->
+    <aside class="sidebar" role="navigation">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="shops.html">Shop Index</a>
+        <a href="shop-detail.html">Short & Stout</a>
+        <a href="eggcellent-detail.html">Eggcellent</a>
+        <a href="gongcha-detail.html">Gong Cha</a>
+        <a href="berryandberry-detail.html">Berry & Berry</a>
+        <a href="romanteac-detail.html">Romanteac</a>
+      </nav>
+    </aside>
 
-                <!-- Short and Stout -->
-                <tr>
-                    <td>Short and Stout Tea Lounge</td>
-                    <td>1736 Western Ave, Albany, NY</td>
-                    <td>Premium Tea • Boba</td>
-                    <td><a href="shop-detail.html">View</a></td>
-                </tr>
+    <!-- Main Content -->
+    <main class="content">
+      <h2>List of All Featured Shops</h2>
 
-                <!-- Eggcellent -->
-                <tr>
-                    <td>Eggcellent</td>
-                    <td>1475 Western Ave, Albany, NY</td>
-                    <td>Boba • Breakfast • Snacks</td>
-                    <td><a href="eggcellent-detail.html">View</a></td>
-                </tr>
+      <table>
+        <tr>
+          <th>Shop Name</th>
+          <th>Location</th>
+          <th>Category</th>
+          <th>Details</th>
+        </tr>
 
-                <!-- Gong Cha -->
-                <tr>
-                    <td>Gong Cha</td>
-                    <td>1232 Western Ave, Albany, NY</td>
-                    <td>Bubble Tea Chain</td>
-                    <td><a href="gongcha-detail.html">View</a></td>
-                </tr>
+        <tr>
+          <td>Short and Stout Tea Lounge</td>
+          <td>1736 Western Ave, Albany, NY</td>
+          <td>Premium Tea • Boba</td>
+          <td><a href="shop-detail.html">View</a></td>
+        </tr>
 
-                <!-- Berry & Berry -->
-                <tr>
-                    <td>Berry & Berry</td>
-                    <td>Crossgates Mall, Albany, NY</td>
-                    <td>Smoothies • Boba</td>
-                    <td><a href="berryandberry-detail.html">View</a></td>
-                </tr>
+        <tr>
+          <td>Eggcellent</td>
+          <td>1475 Western Ave, Albany, NY</td>
+          <td>Boba • Breakfast • Snacks</td>
+          <td><a href="eggcellent-detail.html">View</a></td>
+        </tr>
 
-                <!-- Romanteac -->
-                <tr>
-                    <td>Romanteac Bubble Tea</td>
-                    <td>260 Osborne Rd, Albany, NY</td>
-                    <td>Bubble Tea & Fruit Drinks</td>
-                    <td><a href="romanteac-detail.html">View</a></td>
-                </tr>
+        <tr>
+          <td>Gong Cha</td>
+          <td>1232 Western Ave, Albany, NY</td>
+          <td>Bubble Tea Chain</td>
+          <td><a href="gongcha-detail.html">View</a></td>
+        </tr>
 
-            </table>
+        <tr>
+          <td>Berry & Berry</td>
+          <td>Crossgates Mall, Albany, NY</td>
+          <td>Smoothies • Boba</td>
+          <td><a href="berryandberry-detail.html">View</a></td>
+        </tr>
 
-            <p style="margin-top:20px;">
-                <a href="index.html">⬅ Return to Home</a>
-            </p>
-        </div>
+        <tr>
+          <td>Romanteac Bubble Tea</td>
+          <td>260 Osborne Rd, Albany, NY</td>
+          <td>Taiwanese Tea • Fruit Drinks</td>
+          <td><a href="romanteac-detail.html">View</a></td>
+        </tr>
 
-    </div>
+      </table>
+
+      <p style="margin-top:20px;">
+        <a href="index.html">⬅ Return to Home</a>
+      </p>
+
+    </main>
+  </div>
+
+  <footer>
+    © 2025 Albany Boba Guide
+  </footer>
+
 </div>
 
 </body>
