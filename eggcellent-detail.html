@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eggcellent – Albany Boba Shop Detail</title>
+
+  <style>
+    :root {
+      --cream:#f7efe6;
+      --light-brown:#e3c9ad;
+      --mid-brown:#c08b64;
+      --dark-brown:#6b3f2b;
+      --muted:#7a6a63;
+      --max-width:1100px;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--cream);
+      font-family: Segoe UI, Arial, sans-serif;
+      color: var(--dark-brown);
+    }
+
+    .page {
+      width: 94%;
+      max-width: var(--max-width);
+      margin: 28px auto;
+      background: white;
+      border: 1px solid #d6c7b2;
+    }
+
+    header#banner {
+      background: linear-gradient(180deg, var(--light-brown), var(--mid-brown));
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .frame {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .sidebar {
+      width: 240px;
+      background: #fff6ef;
+      padding: 18px;
+      border-right: 1px solid #edd6c1;
+      box-sizing: border-box;
+    }
+
+    .sidebar nav a {
+      display: block;
+      padding: 8px;
+      margin: 6px 0;
+      font-weight: 600;
+      color: var(--dark-brown);
+      text-decoration: none;
+    }
+
+    .sidebar nav a:hover {
+      background: #f0d8c3;
+    }
+
+    .content {
+      padding: 22px;
+      flex: 1;
+      box-sizing: border-box;
+    }
+
+    .gallery {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 14px 0;
+    }
+
+    .gallery img {
+      width: 220px;
+      height: 150px;
+      border-radius: 6px;
+      border: 1px solid #d6c7b2;
+      object-fit: cover;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0;
+      background: white;
+    }
+
+    td, th {
+      border: 1px solid #d6c7b2;
+      padding: 10px;
+    }
+
+    th {
+      background: #f5e3d3;
+      text-align: left;
+    }
+
+    iframe {
+      border: 1px solid #d6c7b2;
+    }
+
+    footer {
+      background: var(--light-brown);
+      color: white;
+      text-align: center;
+      padding: 12px;
+      margin-top: 20px;
+      border-top: 1px solid #d6c7b2;
+    }
+
+    .back {
+      display: inline-block;
+      padding: 8px 12px;
+      background: var(--mid-brown);
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 16px;
+    }
+
+    .back:hover {
+      background: var(--dark-brown);
+    }
+
+    @media (max-width: 760px) {
+      .frame {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="page">
+
+  <!-- Banner -->
+  <header id="banner">
+    <h1>Eggcellent – Albany</h1>
+    <p>Breakfast • Bubble Tea • Snacks on Western Ave</p>
+  </header>
+
+  <div class="frame">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="shops.html">Shop Index</a>
+        <a href="shop-detail.html">Short & Stout</a>
+        <a href="eggcellent-detail.html">Eggcellent</a>
+        <a href="gongcha-detail.html">Gong Cha</a>
+        <a href="berryandberry-detail.html">Berry & Berry</a>
+        <a href="romanteac-detail.html">Romanteac</a>
+      </nav>
+    </aside>
+
+    <!-- Content Area -->
+    <main class="content">
+
+      <h2>About Eggcellent</h2>
+      <p>
+        Eggcellent is a cozy breakfast-and-boba spot located along Western Ave, popular with students
+        for its creative waffle dishes, breakfast sandwiches, and customizable bubble tea drinks.
+        The atmosphere is bright and modern with fast service and affordable prices.
+      </p>
+
+      <!-- Photo Gallery -->
+      <h3>Photo Gallery</h3>
+      <div class="gallery">
+        <img src="assets/eggcellent.jpg" alt="Eggcellent Albany storefront">
+        <img src="assets/eggcellent-2.jpg" alt="Eggcellent Albany interior">
+        <img src="assets/eggcellent-3.jpg" alt="Eggcellent drinks">
+      </div>
+
+      <!-- Shop Info -->
+      <h3>Shop Information</h3>
+      <table>
+        <tr>
+          <th>Category</th>
+          <td>Boba • Breakfast • Snacks</td>
+        </tr>
+        <tr>
+          <th>Address</th>
+          <td>1475 Western Ave, Albany, NY 12203</td>
+        </tr>
+        <tr>
+          <th>Hours</th>
+          <td>
+            Mon–Sat: 10am–9pm <br>
+            Sun: 11am–7pm
+          </td>
+        </tr>
+        <tr>
+          <th>Phone</th>
+          <td>(518) 123-4567</td>
+        </tr>
+      </table>
+
+      <!-- Drinks -->
+      <h3>Popular Drinks</h3>
+      <table>
+        <tr>
+          <th>Drink</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Brown Sugar Milk Tea</td>
+          <td>Classic sweet milk tea with caramelized syrup</td>
+          <td>$5.50</td>
+        </tr>
+        <tr>
+          <td>Mango Fruit Tea</td>
+          <td>Refreshing mango purée blended with iced green tea</td>
+          <td>$5.25</td>
+        </tr>
+        <tr>
+          <td>Strawberry Milk Foam Tea</td>
+          <td>Black tea topped with sweet strawberry milk foam</td>
+          <td>$5.75</td>
+        </tr>
+      </table>
+
+      <!-- Menu PDF -->
+      <h3>Menu (PDF)</h3>
+      <p>View Eggcellent’s sample menu below:</p>
+      <iframe src="assets/eggcellent-menu.pdf" width="600" height="400"></iframe>
+
+      <br>
+      <a class="back" href="shops.html">⬅ Back to Shop Index</a>
+
+    </main>
+  </div>
+
+  <footer>
+    © 2025 Albany Boba Guide
+  </footer>
+
+</div>
+
+</body>
+</html>
