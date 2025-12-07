@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Romanteac Bubble Tea — Albany Shop Detail</title>
+  <style>
+    :root { --cream:#f7efe6; --light-brown:#e3c9ad; --mid-brown:#c08b64; --dark-brown:#6b3f2b; --muted:#7a6a63; --max-width:1100px; }
+    html,body { margin:0; padding:0; background:var(--cream); font-family:Segoe UI, Roboto, Arial, sans-serif; color:var(--dark-brown); }
+    .page { width:94%; max-width:var(--max-width); margin:28px auto; background:white; border:1px solid #d6c7b2; }
+    header#banner { background: linear-gradient(180deg,var(--light-brown),var(--mid-brown)); color:white; padding:18px; text-align:center; }
+    .frame { display:flex; align-items:flex-start; }
+    .sidebar { width:240px; background:#fff6ef; border-right:1px solid #edd6c1; padding:16px; box-sizing:border-box; }
+    .sidebar nav a { display:block; padding:8px; margin:8px 0; font-weight:600; color:var(--dark-brown); text-decoration:none; }
+    .sidebar nav a:hover { background:#f0d8c3; }
+    .content { padding:18px; flex:1; box-sizing:border-box; }
+    dl.shop-info dt { font-weight:700; margin-top:6px; }
+    dl.shop-info dd { margin:0 0 8px 8px; color:var(--muted); }
+    .gallery { display:flex; gap:10px; margin:12px 0; flex-wrap:wrap; }
+    .gallery a { display:block; width:180px; border:1px solid #ead3bf; background:#fff; border-radius:6px; overflow:hidden; text-align:center; }
+    .gallery img { width:100%; height:120px; object-fit:cover; display:block; }
+    .footer { background:var(--light-brown); color:white; text-align:center; padding:10px; border-top:1px solid #d6c7b2; margin-top:12px; }
+    @media (max-width:760px) { .frame { flex-direction:column; } .gallery a { width:48%; } }
+    a.back { display:inline-block; margin-top:12px; padding:8px 10px; background:var(--mid-brown); color:white; border-radius:6px; text-decoration:none; }
+    a.back:hover { background:var(--dark-brown); }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header id="banner">
+      <h1>Romanteac Bubble Tea — Albany</h1>
+      <p style="margin-top:6px;font-size:0.95rem;opacity:0.95;">Known address: 260 Osborne Rd, Albany, NY 12211 :contentReference[oaicite:11]{index=11}</p>
+    </header>
+
+    <div class="frame">
+      <aside class="sidebar" role="navigation">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="shops.html">Shop Index</a>
+          <a href="romanteac-detail.html">This Page</a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <section>
+          <h2 style="margin-top:0;">Romanteac Bubble Tea</h2>
+          <dl class="shop-info" aria-label="Shop information">
+            <dt>Address</dt>
+             <dd>260 Osborne Rd, Albany, NY 12211 :contentReference[oaicite:12]{index=12}</dd>
+            <dt>Phone</dt>
+             <dd>(585) 666-9888 :contentReference[oaicite:13]{index=13}</dd>
+            <dt>Typical Hours</dt>
+             <dd>Mon, Wed–Sun: 11:00 AM – 8:00 PM; Closed Tue (confirm before visiting) :contentReference[oaicite:14]{index=14}</dd>
+          </dl>
+        </section>
+
+        <section aria-labelledby="gallery-title">
+          <h3 id="gallery-title">Photo Gallery (replace with real photos)</h3>
+          <div class="gallery">
+            <a href="assets/romanteac-1.jpg"><img src="assets/romanteac-1.jpg" alt="Romanteac storefront (placeholder)"></a>
+            <a href="assets/romanteac-2.jpg"><img src="assets/romanteac-2.jpg" alt="Romanteac drink (placeholder)"></a>
+            <a href="assets/romanteac-3.jpg"><img src="assets/romanteac-3.jpg" alt="Romanteac interior (placeholder)"></a>
+          </div>
+        </section>
+
+        <section style="margin-top:8px;">
+          <h3>Popular Offerings (example)</h3>
+          <ul>
+            <li>Fruit Teas & Smoothies</li>
+            <li>Taro Milk Tea</li>
+            <li>Seasonal Specialty Drinks</li>
+          </ul>
+        </section>
+
+        <p><a class="back" href="shops.html">⬅ Back to Shop List</a></p>
+      </main>
+    </div>
+
+    <footer>© 2025 Albany Boba Guide</footer>
+  </div>
+</body>
+</html>
