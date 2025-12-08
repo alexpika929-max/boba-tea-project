@@ -31,7 +31,7 @@ const shops = [
     address: "1232 Western Ave, Albany, NY",
     tags: ["Chain", "Customizable"],
     link: "gongcha-detail.html",
-    img: "assets/gongcha-1.jpg"
+    img: "assets/gongcha.jpg"
   },
   {
     id: "berryandberry",
@@ -39,7 +39,7 @@ const shops = [
     address: "Crossgates Mall, Albany, NY",
     tags: ["Smoothies", "Boba"],
     link: "berryandberry-detail.html",
-    img: "assets/berryandberry-1.jpg"
+    img: "assets/berryandberry.jpg"
   },
   {
     id: "romanteac",
@@ -47,7 +47,7 @@ const shops = [
     address: "260 Osborne Rd, Albany, NY",
     tags: ["Fruit Tea", "Milk Tea"],
     link: "romanteac-detail.html",
-    img: "assets/romanteac-1.jpg"
+    img: "assets/romanteac.jpg"
   }
 ];
 
@@ -178,3 +178,4 @@ document.addEventListener("DOMContentLoaded", function () {
     lastSearchNote.textContent = last ? `Last search: ${last}` : "";
   }
 });
+
