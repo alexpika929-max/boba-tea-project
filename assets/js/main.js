@@ -39,7 +39,7 @@ const shops = [
     address: "Crossgates Mall, Albany, NY",
     tags: ["Smoothies", "Boba"],
     link: "berryandberry-detail.html",
-    img: "assets/berryandberry.jpg"
+    img: "assets/berry-and-berry.jpg"
   },
   {
     id: "romanteac",
@@ -178,4 +178,5 @@ document.addEventListener("DOMContentLoaded", function () {
     lastSearchNote.textContent = last ? `Last search: ${last}` : "";
   }
 });
+
 
