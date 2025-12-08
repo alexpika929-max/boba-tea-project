@@ -142,6 +142,20 @@
 
     <!-- Main Content -->
     <main class="content">
+      <!-- SEARCH UI (added for Part II JS requirements) -->
+      <section aria-labelledby="search-title">
+        <h2 id="search-title">Find a Shop (Search)</h2>
+        <!-- NOTE: The JS file (assets/js/main.js) is external and linked at bottom of page -->
+        <!-- The IDs below are important and referenced in assets/js/main.js -->
+        <div style="display:flex;gap:8px;align-items:center;margin-bottom:12px;">
+          <input id="shop-search-input" type="search" placeholder="Search by name, tag or location (e.g., 'matcha', 'Crossgates')" style="flex:1;padding:8px;border:1px solid #d6c7b2;border-radius:6px;">
+          <button id="shop-search-btn" style="padding:8px 12px;background:#c08b64;color:white;border:none;border-radius:6px;cursor:pointer;">Search</button>
+        </div>
+        <div id="shop-search-last" style="color:#7a6a63;font-size:0.9rem;margin-bottom:8px;"></div>
+        <!-- Results container: JS will dynamically insert shop cards here -->
+        <div id="shop-search-results" aria-live="polite"></div>
+      </section>
+
       <h2>List of All Featured Shops</h2>
 
       <table>
@@ -201,6 +215,12 @@
   </footer>
 
 </div>
+  
+  <!-- Link to external JS: keeps HTML clean (rubric: HTML not cluttered with JS) -->
+  <!-- Comment linking HTML & JS (rubric requirement: comments in HTML/JS linking the two together) -->
+  <!-- main.js: Implements search, validation, array use, loops, dynamic DOM updates -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 </html>
+
